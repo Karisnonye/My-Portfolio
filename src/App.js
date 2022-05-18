@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Intro from './components/Intro'
+import About from "./components/About"
+import Projects from "./components/Projects"
+import Contact from "./components/Contact"
+import {DATA} from "./components/data"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  
+
+    const projects = DATA.map(item => {
+      return (     
+        <Projects 
+          key= {item.id}
+          image= {item.image}
+          projectName= {item.projectName}
+        />
+      )
+    })
+    return (
+      <div>
+        <Intro />
+        <About />
+          <section className="project text-center">
+            <h1 className="p-4">Projects</h1>
+            {projects}
+          </section>
+        <Contact />
+      </div>
+    )
 }
 
-export default App;
+export default App
