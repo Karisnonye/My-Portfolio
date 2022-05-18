@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: square;
+}
+
+:root{
+    --dleaf: rgb(90, 216, 7);
+    --leaf: rgb(108, 204, 44);
+    --dpick: rgb(245, 153, 158);
+    --pick: rgb(85, 76, 76);
+    --lblue: rgb(165, 165, 211);
+    --dblue: rgb(110, 110, 182);
+    --transparent: rgba(255, 255, 255, 0.096);
+}
+
+body {
+    background: linear-gradient(to bottom right, rgb(25, 114, 54), rgb(9, 47, 73) );
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    
+}
+
+.rich{
+    width: 1050px;
+    height: 80vh;
+    margin: 10vh auto;
+    border: 4px solid var(--lblue);
+    border-radius: 20px; 
+    display: block;
+    background-color: var(--transparent);
+
+}
+
+.rich .name{
+    font-size: 30px;
+    float: right;
+    margin: 120px 0;
+    line-height: 3em;
+      
+}
+
+.btn{
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: 4px solid var(--lblue);
+    background-color: var(--dblue);
+
+}
+
+a :hover{   
+    background-color: linear-gradient(to bottom right, var(--pick), var(--leaf));
+}
+
+
+
+#img1{
+    object-fit: cover;
+    object-position: top;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 4px solid var(--lblue);
+    position: relative;
+    top: 20vh;
+    right: 150px;
+    
+}
+
+
+
+.about-me{
+    margin: 80px 30px;
+    border: 4px solid var(--lblue);
+    border-radius: 20px;
+    height: 900px;
+    
+}
+
+.about-me h1{
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 30px;
+}
+
+#me{
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    border: 4px solid var(--lblue);
+    border-radius: 20px;
+    margin: 100px 20px;
+}
+
+
+.info{
+    position: relative;
+    bottom: 650px;
+    left: 500px;
+    text-align: justify;
+    
+}
+
+
+.info p{
+    max-width: 700px;
+}
+
+
+
+.box{
+    border: 1px solid var(--lblue);
+    padding: 5px;
+    width: 785px;
+    
+
+}
+
+
+.loo{
+    display: inline;
+    padding: 0 10px;
+}
+
+.loo:hover{
+    border-bottom: 3px solid var(--lblue);
+    cursor: pointer;
+
+}
+
+.line{
+    margin-top: 20px;
+    border-left: 2px solid var(--lblue);
+    height: 350px;
+    
+}
+
+.school, .experience-list{
+    padding-left: 10px;
+    display: none;
+}
+
+.school, .experience-list .active{
+    display: block;
+}
+
+#year{
+    text-align: end;
+}
+
+section{
+    margin: 80px 30px;
+    border: 4px solid var(--lblue);
+    border-radius: 20px;
+    height: 900px;
+    background-color: var(--transparent);
+}
+
+
+.works h1{
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 30px;
+}
+
+
+div.img {
+    margin: 50px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 250px;
+    
+}	
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 250px;
+    height: 200px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+.contact h1{
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 30px;
+}
+
+.contact-form{
+    margin: 60px;
+    
+}
+
+input, textarea{
+    width: 500px;
+    height: 40px;
+    border: 2px solid var(--lblue);
+    box-shadow: 30px;
+    background-color: transparent;
+    border-radius: 20px;
+    padding-left: 10px;
+    
+    font-weight: bolder;
+    
+
+}
+
+
+.contact .my-info{
+    position: relative;
+    float: right;
+    right: 100px;
+    bottom: 425px;
+}
+
+
+.my-info a i{
+    padding: 3px;
+    color: var(--dblue);
+}
+
+.my-info a i:hover{
+    color: var(--lblue);
+}
+
+
+
+
+/*--------------------Responsiveness----------------------*/
+@media only screen and (max-width: 500px) {
+    body{
+        background-color: lightblue;
+    }
+}

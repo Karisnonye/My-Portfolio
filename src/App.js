@@ -14,6 +14,7 @@ function App() {
           key= {item.id}
           image= {item.image}
           projectName= {item.projectName}
+          link= {item.link}
         />
       )
     })
