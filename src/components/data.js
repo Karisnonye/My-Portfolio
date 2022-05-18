@@ -20,7 +20,7 @@ export const DATA =  [
         id: 3,
         image: piggyvest,
         projectName: "Piggyvest Signup  Replica",
-        link: "https://app.netlify.com/sites/cosmic-lebkuchen-dac69c"
+        link: "https://cosmic-lebkuchen-dac69c.netlify.app/"
     },
     {
         id: 4,
@@ -32,7 +32,7 @@ export const DATA =  [
         id: 5,
         image: piggyvest,
         projectName: "Piggyvest Signup Replica",
-        link: "https://app.netlify.com/sites/cosmic-lebkuchen-dac69c"
+        link: "https://cosmic-lebkuchen-dac69c.netlify.app/"
     },
     {
         id: 6,
