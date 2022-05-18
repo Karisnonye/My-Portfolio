@@ -1,4 +1,3 @@
-import snap from "../images/snap.jpg"
 import kudaSignup from "../images/kudaSignup.png"
 import piggyvest from "../images/piggyvest.png"
 import travel from "../images/travel.jpg"
